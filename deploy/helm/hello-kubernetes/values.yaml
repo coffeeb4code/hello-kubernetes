@@ -5,7 +5,7 @@ message: ""
 ingress:
   configured: true
   rewritePath: true
-  pathPrefix: ""
+  pathPrefix: /hello-world
 
 service:
   type: ClusterIP
