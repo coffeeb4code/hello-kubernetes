@@ -5,7 +5,7 @@ message: ""
 ingress:
   configured: true
   rewritePath: true
-  pathPrefix: /hello-world
+  pathPrefix: "/app/hello-kubernetes/"
 
 service:
   type: ClusterIP
