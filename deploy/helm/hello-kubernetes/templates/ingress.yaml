@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: hello-kubernetes-hello-world-ingress
+  annotations: {}
+spec:
+  backend:
+    serviceName: hello-kubernetes-hello-world
+    servicePort: 80
+  rules:
+    - host: helm-guestbook.20.40.240.229.nip.io
+      http:
+        paths:
+          - path: /hello-world(/|$)(.*)
+            backend:
+              serviceName: hello-kubernetes-hello-world
+              servicePort: 80
