@@ -6,7 +6,7 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   backend:
-    serviceName: hello-kubernetes-hello-world
+    serviceName: hello-kubernetes-hello-kubernetes
     servicePort: 80
   rules:
     - host: hello-kubernetes-hello-world.20.40.240.229.nip.io
