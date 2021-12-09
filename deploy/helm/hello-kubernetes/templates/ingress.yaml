@@ -12,7 +12,7 @@ spec:
     - host: hello-kubernetes-hello-world.20.40.240.229.nip.io
       http:
         paths:
-          - path: /hello-world(/|$)(.*)
+          - path: /app/hello-kubernetes/
             backend:
               serviceName: hello-kubernetes-hello-world
               servicePort: 80
